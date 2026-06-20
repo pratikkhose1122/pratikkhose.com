@@ -194,7 +194,7 @@ export default function ContactPageClient() {
                 </div>
               ) : (
                 <div className="bg-white dark:bg-foreground/5 border border-slate-200 dark:border-border rounded-3xl p-8 sm:p-10 shadow-lg dark:shadow-none">
-                  {state.errors && state.errors.length > 0 && (
+                  {state.errors && (
                     <div className="mb-6 p-4 bg-red-500/10 border border-red-500/50 rounded-xl text-red-500 text-sm">
                       There was a problem submitting your request. Please ensure all fields are valid.
                     </div>

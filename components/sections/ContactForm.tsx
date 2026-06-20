@@ -77,7 +77,7 @@ export function ContactForm() {
 
           {/* Right Column - Form */}
           <div className="bg-foreground/5 border border-border rounded-3xl p-8 sm:p-10 backdrop-blur-sm shadow-2xl">
-            {state.errors && state.errors.length > 0 && (
+            {state.errors && (
               <div className="mb-6 p-4 bg-red-500/10 border border-red-500/50 rounded-xl text-red-500 text-sm">
                 There was a problem submitting your request. Please ensure all fields are valid.
               </div>
