@@ -4,11 +4,11 @@ import ServicesPageClient from "@/components/sections/ServicesPageClient";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Mobile app development, startup MVP sprints, and custom software solutions. Flutter, React, Next.js experts building scalable products for startups and businesses.",
+    "Mobile app development, startup MVP sprints, and custom software solutions. Flutter, React, and Node.js expert building scalable products.",
   openGraph: {
-    title: "Our Services | BuildYourWay",
+    title: "Services | Pratik Khose",
     description:
-      "Mobile app development, startup MVP sprints, and custom software solutions built by a premium engineering team.",
+      "Mobile app development, startup MVP sprints, and custom software solutions built by an experienced developer.",
   },
 };
 

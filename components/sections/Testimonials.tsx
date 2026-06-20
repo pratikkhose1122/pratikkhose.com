@@ -6,7 +6,7 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "BuildYourWay didn't just build an app; they engineered an entire ecosystem that allowed us to scale from 1,000 to 10,000 members effortlessly.",
+    quote: "Pratik didn't just build an app; he engineered an entire ecosystem that allowed us to scale from 1,000 to 10,000 members effortlessly.",
     author: "Rahul Sharma",
     role: "Founder, MyGymBook",
     company: "MyGymBook",

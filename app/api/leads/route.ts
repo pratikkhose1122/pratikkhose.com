@@ -37,8 +37,8 @@ export async function POST(req: Request) {
     try {
       // Internal notification
       await resend.emails.send({
-        from: "BuildYourWay <hello@buildyourway.agency>",
-        to: ["sales@buildyourway.agency"],
+        from: "Pratik Khose <buildyourway.studio@gmail.com>",
+        to: ["buildyourway.studio@gmail.com"],
         subject: `New Lead: ${name} (${service})`,
         html: `
           <h3>New Strategy Call Request</h3>
@@ -55,16 +55,16 @@ export async function POST(req: Request) {
 
       // Prospect confirmation
       await resend.emails.send({
-        from: "BuildYourWay <hello@buildyourway.agency>",
+        from: "Pratik Khose <buildyourway.studio@gmail.com>",
         to: [email],
-        subject: "We received your strategy call request",
+        subject: "I received your project inquiry",
         html: `
           <p>Hi ${name},</p>
-          <p>Thank you for reaching out to BuildYourWay. Our team is reviewing your project details.</p>
-          <p>If you haven't already selected a time for our strategy call, you can do so here: <a href="https://cal.com/buildyourway/30min">Schedule Call</a>.</p>
+          <p>Thank you for reaching out. I'm reviewing your project details.</p>
+          <p>If you haven't already selected a time for our strategy call, you can do so here: <a href="https://cal.com/pratik-khose">Schedule Call</a>.</p>
           <br/>
           <p>Best regards,</p>
-          <p>The BuildYourWay Engineering Team</p>
+          <p>Pratik Khose</p>
         `,
       });
     } catch (emailError) {

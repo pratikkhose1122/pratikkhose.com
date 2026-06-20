@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import ContactPageClient from "@/components/sections/ContactPageClient";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact",
   description:
-    "Ready to build your next app? Reach out via email, or book a free strategy call. We respond within 24 hours.",
+    "Ready to build your next app? Reach out via email, or book a free strategy call.",
   openGraph: {
-    title: "Contact Us | BuildYourWay",
+    title: "Contact | Pratik Khose",
     description:
-      "Ready to build your next app? Reach out and get a free strategy call with our engineering team.",
+      "Ready to build your next app? Reach out via email, or book a free strategy call.",
   },
 };
 

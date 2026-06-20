@@ -29,7 +29,7 @@ export async function generateMetadata({
     title: `${project.title} — Case Study`,
     description: project.subtitle,
     openGraph: {
-      title: `${project.title} | Case Study | BuildYourWay`,
+      title: `${project.title} | Case Study | Pratik Khose`,
       description: project.overview.slice(0, 160),
       type: "article",
     },

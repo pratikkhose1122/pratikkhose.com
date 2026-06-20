@@ -30,7 +30,7 @@ export default function AboutPageClient() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 dark:bg-foreground/5 border border-slate-200 dark:border-foreground/10 text-xs md:text-sm mb-8 text-slate-700 dark:text-foreground/80"
           >
             <span className="flex h-2 w-2 rounded-full bg-primary shadow-[0_0_8px_rgba(37,99,235,0.5)] dark:shadow-[0_0_8px_rgba(37,99,235,0.8)]" />
-            <span className="font-medium tracking-wide">About Us</span>
+            <span className="font-medium tracking-wide">About Me</span>
           </motion.div>
 
           <motion.h1
@@ -39,7 +39,7 @@ export default function AboutPageClient() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter mb-6 leading-[1.05] text-slate-900 dark:text-foreground"
           >
-            We Build Software That{" "}
+            I Build Software That{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-500">
               Moves Businesses Forward.
             </span>
@@ -61,13 +61,19 @@ export default function AboutPageClient() {
               variants={fadeUp}
               className="text-xl md:text-2xl text-slate-700 dark:text-foreground/80 leading-relaxed font-light"
             >
-              At BuildYourWay, we don't just write code. We engineer solutions that solve real business problems. We believe that great software should be intuitive, scalable, and directly tied to your bottom line.
+              I'm a Software Developer from Maharashtra, India. I build scalable mobile applications, admin dashboards, SaaS products, and modern business software using Flutter, Firebase, Supabase, Node.js, PostgreSQL, and cloud technologies.
             </motion.p>
             <motion.p
               variants={fadeUp}
               className="text-xl md:text-2xl text-slate-700 dark:text-foreground/80 leading-relaxed font-light"
             >
-              Whether we're helping a startup launch their MVP in record time or building a complex internal tool for an established enterprise, our approach remains the same: <span className="font-semibold text-slate-900 dark:text-foreground">engineering excellence paired with deep business understanding.</span>
+              I've built production-ready applications across Healthcare, Fitness Tech, and FinTech domains, including MyGymBook, IPO Tracker, and MCCD App.
+            </motion.p>
+            <motion.p
+              variants={fadeUp}
+              className="text-xl md:text-2xl text-slate-700 dark:text-foreground/80 leading-relaxed font-light"
+            >
+              My focus is creating fast, beautiful, and business-focused software that solves real-world problems through <span className="font-semibold text-slate-900 dark:text-foreground">engineering excellence paired with deep business understanding.</span>
             </motion.p>
           </motion.div>
         </div>
@@ -113,7 +119,7 @@ export default function AboutPageClient() {
           >
             <motion.div variants={fadeUp} className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-slate-900 dark:text-foreground">
-                How We Work
+                How I Work
               </h2>
               <p className="text-xl text-slate-600 dark:text-foreground/60 max-w-2xl mx-auto font-light">
                 A transparent, iterative process designed to deliver value quickly and consistently.
@@ -122,10 +128,10 @@ export default function AboutPageClient() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { icon: Target, title: "1. Discovery", desc: "We start by deeply understanding your business goals, target audience, and technical constraints." },
-                { icon: Code2, title: "2. Architecture", desc: "We design a scalable technical foundation and create high-fidelity prototypes." },
-                { icon: Rocket, title: "3. Agile Build", desc: "We develop in 2-week sprints, giving you full visibility and frequent demos." },
-                { icon: Users, title: "4. Launch & Scale", desc: "We deploy to production, monitor performance, and provide ongoing support." },
+                { icon: Target, title: "1. Discovery", desc: "I start by deeply understanding your business goals, target audience, and technical constraints." },
+                { icon: Code2, title: "2. Architecture", desc: "I design a scalable technical foundation and create high-fidelity prototypes." },
+                { icon: Rocket, title: "3. Agile Build", desc: "I develop in 2-week sprints, giving you full visibility and frequent demos." },
+                { icon: Users, title: "4. Launch & Scale", desc: "I deploy to production, monitor performance, and provide ongoing support." },
               ].map((step, i) => (
                 <motion.div
                   key={i}
@@ -164,7 +170,7 @@ export default function AboutPageClient() {
               Ready to start your project?
             </motion.h2>
             <motion.div variants={fadeUp}>
-              <a href="https://cal.com/buildyourway" target="_blank" rel="noopener noreferrer">
+              <a href="https://cal.com/pratik-khose" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="h-16 px-10 text-lg mt-8 shadow-[0_0_30px_rgba(37,99,235,0.3)] hover:shadow-[0_0_40px_rgba(37,99,235,0.5)] transition-all">
                   Schedule a Free Strategy Call
                   <ArrowRight className="ml-2 h-6 w-6" />

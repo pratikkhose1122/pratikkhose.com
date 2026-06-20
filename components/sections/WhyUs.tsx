@@ -35,10 +35,10 @@ export function WhyUs() {
           
           <div className="lg:col-span-5">
             <h2 className="text-4xl md:text-6xl font-heading font-bold tracking-tight mb-6 leading-tight">
-              Why <br className="hidden lg:block"/> BuildYourWay?
+              Why <br className="hidden lg:block"/> Work With Me?
             </h2>
             <p className="text-xl text-foreground/60 mb-8 leading-relaxed">
-              We operate like your in-house premium engineering team. We care about clean code, stunning design, and bottom-line business results.
+              I operate as your dedicated premium engineer. I care about clean code, stunning design, and bottom-line business results.
             </p>
             
             {/* Quick stats */}

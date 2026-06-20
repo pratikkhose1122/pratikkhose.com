@@ -16,48 +16,52 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://buildyourway.agency";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pratikkhose.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "BuildYourWay | Premium App Development Agency",
-    template: "%s | BuildYourWay",
+    default: "Pratik Khose | Software Developer",
+    template: "%s | Pratik Khose",
   },
   description:
-    "We help startups and businesses transform ideas into scalable mobile apps, web platforms, and custom software solutions. Flutter, React, Next.js experts.",
+    "Software Developer building mobile apps, SaaS platforms, healthcare systems, and business software.",
   keywords: [
-    "Flutter development",
-    "mobile app agency",
-    "MVP development",
-    "app development company India",
-    "custom software development",
-    "startup app development",
-    "React Native development",
-    "Next.js development",
+    "Software Developer",
+    "Mobile App Developer",
+    "Flutter Developer",
+    "SaaS Developer",
+    "Full Stack Developer",
+    "India",
+    "Maharashtra",
+    "Firebase",
+    "Supabase",
+    "Node.js",
+    "Healthcare Software",
+    "Business Software"
   ],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: BASE_URL,
-    siteName: "BuildYourWay",
-    title: "BuildYourWay | Premium App Development Agency",
+    siteName: "Pratik Khose",
+    title: "Pratik Khose | Software Developer",
     description:
-      "We help startups and businesses transform ideas into scalable mobile apps, web platforms, and custom software solutions.",
+      "Software Developer building mobile apps, SaaS platforms, healthcare systems, and business software.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "BuildYourWay - Premium App Development Agency",
+        alt: "Pratik Khose - Software Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BuildYourWay | Premium App Development Agency",
+    title: "Pratik Khose | Software Developer",
     description:
-      "We help startups and businesses transform ideas into scalable mobile apps, web platforms, and custom software solutions.",
+      "Software Developer building mobile apps, SaaS platforms, healthcare systems, and business software.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -74,13 +78,16 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "BuildYourWay",
-    "description": "Premium App Development Agency — Flutter, React, Next.js experts helping startups and businesses build scalable software.",
+    "@type": "Person",
+    "name": "Pratik Khose",
+    "jobTitle": "Software Developer",
+    "description": "Software Developer building mobile apps, SaaS platforms, healthcare systems, and business software.",
     "url": BASE_URL,
     "email": "buildyourway.studio@gmail.com",
-    "areaServed": "Worldwide",
-    "serviceType": ["Mobile App Development", "UI/UX Design", "MVP Development", "Custom Software Development", "SaaS Development"]
+    "sameAs": [
+      "https://www.linkedin.com/in/pratik-khose-ab441937b",
+      "https://github.com/pratikkhose1122"
+    ]
   };
 
   return (

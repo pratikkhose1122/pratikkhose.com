@@ -3,13 +3,13 @@ import { projectsConfig } from "@/lib/config/projectsConfig";
 import ProjectsPageClient from "@/components/sections/ProjectsPageClient";
 
 export const metadata: Metadata = {
-  title: "Our Projects",
+  title: "Projects",
   description:
-    "Explore our portfolio of live, production products — from gym management platforms to financial tracking apps and healthcare systems.",
+    "Explore my portfolio of live, production products — from gym management platforms to financial tracking apps and healthcare systems.",
   openGraph: {
-    title: "Our Projects | BuildYourWay",
+    title: "Projects | Pratik Khose",
     description:
-      "Real products we've shipped — solving real business problems for real clients.",
+      "Real products I've shipped — solving real business problems for real clients.",
   },
 };
 

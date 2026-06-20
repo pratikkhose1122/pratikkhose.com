@@ -45,10 +45,10 @@ export function ContactForm() {
               Let's Talk
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 text-foreground">
-              Ready to build something extraordinary?
+              Let's Discuss Your Project
             </h2>
             <p className="text-xl text-foreground/60 mb-12 leading-relaxed">
-              Fill out the form to request a free strategy session. We'll discuss your goals, technical requirements, and how we can help you achieve them.
+              Need a mobile app, SaaS platform, admin dashboard, or custom software solution? Let's discuss your requirements and bring your idea to life.
             </p>
 
             <div className="space-y-8">
@@ -69,7 +69,7 @@ export function ContactForm() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg mb-1 text-foreground">Remote</h4>
-                  <p className="text-foreground/60">We work remotely worldwide,<br />serving clients globally.</p>
+                  <p className="text-foreground/60">I work remotely worldwide,<br />serving clients globally.</p>
                 </div>
               </div>
             </div>
@@ -136,7 +136,7 @@ export function ContactForm() {
 
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium text-foreground/80">Project Details *</label>
-                <textarea required id="message" name="message" rows={4} className="w-full bg-background/50 border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none" placeholder="Tell us about your project, goals, and timeline..."></textarea>
+                <textarea required id="message" name="message" rows={4} className="w-full bg-background/50 border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none" placeholder="Tell me about your project, goals, and timeline..."></textarea>
                 <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-xs mt-1 block" />
               </div>
 

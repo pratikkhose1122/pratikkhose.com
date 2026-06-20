@@ -192,7 +192,7 @@ export default function ProjectsPageClient() {
               business logic to every project. Let&apos;s discuss yours.
             </motion.p>
             <motion.div variants={fadeUp}>
-              <a href="https://cal.com/buildyourway" target="_blank" rel="noopener noreferrer">
+              <a href="https://cal.com/pratik-khose" target="_blank" rel="noopener noreferrer">
             <Button
                   size="lg"
                   className="h-16 px-10 text-lg shadow-[0_0_30px_rgba(37,99,235,0.3)] hover:shadow-[0_0_40px_rgba(37,99,235,0.5)] transition-all"

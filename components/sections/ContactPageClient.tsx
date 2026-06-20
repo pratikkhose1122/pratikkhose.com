@@ -18,34 +18,34 @@ const stagger = {
 };
 
 const EMAIL = "buildyourway.studio@gmail.com";
-const EMAIL_URL = `mailto:${EMAIL}?subject=Project%20Inquiry%20-%20BuildYourWay&body=Hi!%20I'm%20interested%20in%20building%20an%20app.%20Here%20are%20my%20project%20details%3A%0A%0A`;
-const CAL_URL = "https://cal.com/buildyourway";
+const EMAIL_URL = `mailto:${EMAIL}?subject=Project%20Inquiry%20-%20Pratik%20Khose&body=Hi!%20I'm%20interested%20in%20building%20an%20app.%20Here%20are%20my%20project%20details%3A%0A%0A`;
+const CAL_URL = "https://cal.com/pratik-khose";
 
 const faqs = [
   {
     question: "How long does it typically take to build an app?",
     answer:
-      "For a standard MVP, we typically launch within 8 to 12 weeks. More complex enterprise applications can take 3 to 6 months. We work in 2-week sprints, so you see working software regularly.",
+      "For a standard MVP, I typically launch within 8 to 12 weeks. More complex enterprise applications can take 3 to 6 months. I work in 2-week sprints, so you see working software regularly.",
   },
   {
     question: "Do you provide maintenance after launch?",
     answer:
-      "Yes. We offer comprehensive SLAs that include bug fixes, OS updates, performance monitoring, and server maintenance to ensure 99.9% uptime.",
+      "Yes. I offer comprehensive SLAs that include bug fixes, OS updates, performance monitoring, and server maintenance to ensure 99.9% uptime.",
   },
   {
     question: "Who owns the source code?",
     answer:
-      "You do. 100%. Upon final payment, all intellectual property, source code, and assets are fully transferred to your company. We build it, but you own it.",
+      "You do. 100%. Upon final payment, all intellectual property, source code, and assets are fully transferred to your company. I build it, but you own it.",
   },
   {
     question: "How do you handle communication during the project?",
     answer:
-      "We set up a dedicated Slack/Discord channel for real-time communication, provide a shared project management board, and hold weekly video syncs to review progress.",
+      "I set up a dedicated Slack/Discord channel for real-time communication, provide a shared project management board, and hold weekly video syncs to review progress.",
   },
   {
     question: "What technologies do you work with?",
     answer:
-      "Our primary stack includes Flutter for mobile, Next.js/React for web, Node.js for backend, and Supabase/PostgreSQL for databases. We choose the best tool for each project's unique requirements.",
+      "My primary stack includes Flutter for mobile, Next.js/React for web, Node.js for backend, and Supabase/PostgreSQL for databases. I choose the best tool for each project's unique requirements.",
   },
 ];
 
@@ -92,7 +92,7 @@ export default function ContactPageClient() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-slate-600 dark:text-foreground/60 max-w-2xl mx-auto font-light leading-relaxed"
           >
-            Fill out the form or reach out directly. We respond within 24 hours.
+            Fill out the form or reach out directly. I respond within 24 hours.
           </motion.p>
         </div>
       </section>
@@ -143,13 +143,13 @@ export default function ContactPageClient() {
                 How It Works
               </h2>
               <p className="text-slate-600 dark:text-foreground/60 mb-12 leading-relaxed">
-                Fill out the form and we&apos;ll get back within 24 hours with a tailored assessment of your project.
+                Fill out the form and I'll get back within 24 hours with a tailored assessment of your project.
               </p>
 
               <div className="space-y-8">
                 {[
-                  { num: "01", title: "Share Your Idea", desc: "Tell us about your project, goals, and timeline." },
-                  { num: "02", title: "Free Assessment", desc: "We analyze feasibility, recommend a tech stack, and estimate scope." },
+                  { num: "01", title: "Share Your Idea", desc: "Tell me about your project, goals, and timeline." },
+                  { num: "02", title: "Free Assessment", desc: "I analyze feasibility, recommend a tech stack, and estimate scope." },
                   { num: "03", title: "Tailored Plan", desc: "Receive a detailed proposal with timeline, milestones, and pricing." },
                 ].map((step) => (
                   <div key={step.num} className="flex gap-5">
@@ -249,7 +249,7 @@ export default function ContactPageClient() {
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="message" className="text-sm font-medium text-slate-700 dark:text-foreground/80">Project Details *</label>
-                      <textarea required id="message" name="message" rows={4} className="w-full bg-slate-50 dark:bg-background/50 border border-slate-200 dark:border-border rounded-xl px-4 py-3 text-slate-900 dark:text-foreground placeholder:text-slate-400 dark:placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none" placeholder="Tell us about your project, goals, and timeline..." />
+                      <textarea required id="message" name="message" rows={4} className="w-full bg-slate-50 dark:bg-background/50 border border-slate-200 dark:border-border rounded-xl px-4 py-3 text-slate-900 dark:text-foreground placeholder:text-slate-400 dark:placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none" placeholder="Tell me about your project, goals, and timeline..." />
                       <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-xs mt-1 block" />
                     </div>
                     <Button type="submit" size="lg" className="w-full h-14 text-base" disabled={state.submitting}>
@@ -287,7 +287,7 @@ export default function ContactPageClient() {
                 Common Questions
               </h2>
               <p className="text-xl text-slate-600 dark:text-foreground/60">
-                Everything you need to know about how we work.
+                Everything you need to know about how I work.
               </p>
             </motion.div>
 

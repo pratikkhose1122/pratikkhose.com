@@ -33,14 +33,20 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 relative z-10">
             <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl leading-none">B</span>
+              <span className="text-white font-bold text-xl leading-none">P</span>
             </div>
             <span className="text-xl font-heading font-bold tracking-tight text-foreground">
-              BuildYourWay
+              Pratik Khose
             </span>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
+            <Link 
+              href="/" 
+              className={`text-sm font-medium transition-colors ${pathname === '/' ? 'text-primary' : 'text-foreground/80 hover:text-foreground'}`}
+            >
+              Home
+            </Link>
             {/* Desktop Services Mega Menu Trigger */}
             <div 
               onMouseEnter={() => setIsServicesHovered(true)}
@@ -125,6 +131,14 @@ export function Navbar() {
 
               {/* Other Mobile Links */}
               <div className="flex flex-col gap-1 pt-2">
+                <Link 
+                  href="/" 
+                  className={`flex items-center justify-between p-3 rounded-xl hover:bg-foreground/5 transition-colors font-medium ${pathname === '/' ? 'text-primary bg-primary/5' : 'text-foreground'}`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Home
+                  <ChevronRight className="w-4 h-4 text-foreground/30" />
+                </Link>
                 <Link 
                   href="/projects" 
                   className={`flex items-center justify-between p-3 rounded-xl hover:bg-foreground/5 transition-colors font-medium ${pathname === '/projects' || pathname.startsWith('/projects/') ? 'text-primary bg-primary/5' : 'text-foreground'}`}
