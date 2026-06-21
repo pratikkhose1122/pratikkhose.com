@@ -87,11 +87,10 @@ export default function AboutPageClient() {
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
             variants={stagger}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center"
+            className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 text-center"
           >
             {[
               { value: "7+", label: "Live Products" },
-              { value: "10K+", label: "Users Impacted" },
               { value: "6", label: "Industries Served" },
               { value: "Full Stack", label: "Development" },
             ].map((stat, i) => (

@@ -48,10 +48,6 @@ export function WhyUs() {
                 <div className="text-sm text-foreground/50 uppercase tracking-wider font-semibold">Live Products</div>
               </div>
               <div>
-                <div className="text-4xl font-heading font-black text-foreground mb-2">10K+</div>
-                <div className="text-sm text-foreground/50 uppercase tracking-wider font-semibold">Users Impacted</div>
-              </div>
-              <div>
                 <div className="text-4xl font-heading font-black text-foreground mb-2">6</div>
                 <div className="text-sm text-foreground/50 uppercase tracking-wider font-semibold">Industries Served</div>
               </div>
