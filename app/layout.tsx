@@ -64,6 +64,22 @@ export const metadata: Metadata = {
       "Software Developer building mobile apps, SaaS platforms, healthcare systems, and business software.",
     images: ["/og-image.png"],
   },
+  icons: {
+    icon: [
+      { url: '/icon.png', sizes: 'any' },
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'apple-touch-icon-precomposed',
+        url: '/apple-icon.png',
+      },
+    ],
+  },
   robots: {
     index: true,
     follow: true,
