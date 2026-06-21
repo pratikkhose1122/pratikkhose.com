@@ -44,12 +44,20 @@ export function WhyUs() {
             {/* Quick stats */}
             <div className="grid grid-cols-2 gap-8 mt-12 pt-12 border-t border-slate-200 dark:border-white/10">
               <div>
-                <div className="text-4xl font-heading font-black text-foreground mb-2">50+</div>
-                <div className="text-sm text-foreground/50 uppercase tracking-wider font-semibold">Projects Delivered</div>
+                <div className="text-4xl font-heading font-black text-foreground mb-2">7+</div>
+                <div className="text-sm text-foreground/50 uppercase tracking-wider font-semibold">Live Products</div>
               </div>
               <div>
-                <div className="text-4xl font-heading font-black text-foreground mb-2">4+</div>
-                <div className="text-sm text-foreground/50 uppercase tracking-wider font-semibold">Years Experience</div>
+                <div className="text-4xl font-heading font-black text-foreground mb-2">10K+</div>
+                <div className="text-sm text-foreground/50 uppercase tracking-wider font-semibold">Users Impacted</div>
+              </div>
+              <div>
+                <div className="text-4xl font-heading font-black text-foreground mb-2">6</div>
+                <div className="text-sm text-foreground/50 uppercase tracking-wider font-semibold">Industries Served</div>
+              </div>
+              <div>
+                <div className="text-4xl font-heading font-black text-foreground mb-2">Full Stack</div>
+                <div className="text-sm text-foreground/50 uppercase tracking-wider font-semibold">Development</div>
               </div>
             </div>
           </div>

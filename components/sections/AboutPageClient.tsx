@@ -90,10 +90,10 @@ export default function AboutPageClient() {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center"
           >
             {[
-              { value: "50+", label: "Projects Delivered" },
-              { value: "4+", label: "Years Experience" },
+              { value: "7+", label: "Live Products" },
               { value: "10K+", label: "Users Impacted" },
-              { value: "100%", label: "Code Ownership" },
+              { value: "6", label: "Industries Served" },
+              { value: "Full Stack", label: "Development" },
             ].map((stat, i) => (
               <motion.div key={i} variants={fadeUp}>
                 <div className="text-4xl md:text-5xl font-heading font-black text-primary mb-2">
