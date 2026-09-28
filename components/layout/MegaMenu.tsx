@@ -18,21 +18,18 @@ export const primaryServices = [
     href: "/services",
     description: "Build high-performance Android, iOS and Flutter applications.",
     icon: <Smartphone className="w-5 h-5 text-primary" />,
-    highlights: ["Flutter Apps", "Android Apps", "iOS Apps", "Cross Platform Solutions"],
   },
   {
     title: "Startup & MVP Development",
     href: "/services",
     description: "Transform ideas into launch-ready products quickly.",
     icon: <Rocket className="w-5 h-5 text-primary" />,
-    highlights: ["MVP Development", "Product Strategy", "UI/UX Design", "Rapid Prototyping"],
   },
   {
     title: "Custom Software Solutions",
     href: "/services",
     description: "Tailored software built around your business workflow.",
     icon: <Code2 className="w-5 h-5 text-primary" />,
-    highlights: ["CRM Systems", "Gym Management Software", "Healthcare Platforms", "Business Automation"],
   }
 ];
 
@@ -57,7 +54,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
       opacity: 1, 
       y: 0, 
       scale: 1,
-      transition: { duration: 0.2, staggerChildren: 0.05 }
+      transition: { duration: 0.2 }
     },
     exit: { 
       opacity: 0, 
@@ -65,11 +62,6 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
       scale: 0.98,
       transition: { duration: 0.15 }
     }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } }
   };
 
   return (
@@ -84,76 +76,68 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
           variants={menuVariants}
           onMouseLeave={onClose}
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-background/95 backdrop-blur-md border border-border rounded-3xl shadow-2xl overflow-hidden flex flex-col">
               
-              {/* Top Section: 3 Service Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-border border-b border-border">
-                {primaryServices.map((service, idx) => (
-                  <motion.div key={idx} variants={itemVariants} className="p-8 group hover:bg-foreground/[0.02] transition-colors relative flex flex-col">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                        {service.icon}
-                      </div>
-                      <h3 className="font-heading font-bold text-foreground text-lg tracking-tight">
-                        {service.title}
-                      </h3>
-                    </div>
-                    
-                    <p className="text-sm text-foreground/60 mb-6 leading-relaxed">
-                      {service.description}
-                    </p>
-
-                    <ul className="space-y-2.5 mb-8 flex-1">
-                      {service.highlights.map((highlight, i) => (
-                        <li key={i} className="flex items-center gap-2 text-sm text-foreground/80">
-                          <div className="w-1.5 h-1.5 rounded-full bg-primary/50" />
-                          {highlight}
-                        </li>
-                      ))}
-                    </ul>
-
+              <div className="grid md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-border">
+                
+                {/* Left Section: Services List */}
+                <div className="md:col-span-3 p-4 sm:p-6 flex flex-col gap-2">
+                  <div className="px-3 mb-2 text-[10px] font-bold uppercase tracking-widest text-foreground/40">
+                    Services
+                  </div>
+                  {primaryServices.map((service, idx) => (
                     <Link 
+                      key={idx}
                       href={service.href} 
                       onClick={onClose}
-                      className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                      className="group flex items-start gap-4 p-3 rounded-2xl hover:bg-foreground/[0.04] transition-all duration-300"
                     >
-                      Learn More <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 border border-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+                        {service.icon}
+                      </div>
+                      <div className="flex-1 pt-0.5">
+                        <h4 className="font-heading font-medium text-foreground text-sm mb-1 group-hover:text-primary transition-colors flex items-center justify-between">
+                          {service.title}
+                          <ArrowRight className="w-4 h-4 text-foreground/20 group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                        </h4>
+                        <p className="text-xs text-foreground/60 leading-relaxed pr-4">
+                          {service.description}
+                        </p>
+                      </div>
                     </Link>
-                  </motion.div>
-                ))}
-              </div>
+                  ))}
+                </div>
 
-              {/* Bottom Section: Featured Project */}
-              <div className="bg-foreground/[0.02] p-6 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-                  <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider shrink-0">
-                    Featured Project
-                  </div>
+                {/* Right Section: Featured Project */}
+                <div className="md:col-span-2 bg-foreground/[0.02] p-6 sm:p-8 flex flex-col justify-between">
                   <div>
-                    <h4 className="text-base font-heading font-bold text-foreground flex items-center gap-2">
+                    <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider mb-5">
+                      Featured Project
+                    </div>
+                    <h4 className="text-lg font-heading font-bold text-foreground mb-2">
                       MyGymBook
                     </h4>
-                    <p className="text-sm text-foreground/60 mt-1">
-                      Gym Management Platform built using Flutter and Supabase.
+                    <p className="text-sm text-foreground/60 mb-8 leading-relaxed">
+                      Gym Management Platform built using Flutter and Supabase. Realtime synchronization across all devices.
                     </p>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <Link href="/projects/mygymbook" onClick={onClose} className="flex-1">
+                      <Button variant="outline" size="sm" className="w-full">
+                        View Study
+                      </Button>
+                    </Link>
+                    <Link href="/contact" onClick={onClose} className="flex-1">
+                      <Button size="sm" className="w-full">
+                        Let's Talk
+                      </Button>
+                    </Link>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 w-full md:w-auto shrink-0">
-                  <Link href="/projects/mygymbook" onClick={onClose} className="w-full md:w-auto">
-                    <Button variant="outline" size="sm" className="w-full">
-                      View Case Study
-                    </Button>
-                  </Link>
-                  <Link href="/contact" onClick={onClose} className="w-full md:w-auto">
-                    <Button size="sm" className="w-full">
-                      Start a Project
-                    </Button>
-                  </Link>
-                </div>
               </div>
-
             </div>
           </div>
         </motion.div>

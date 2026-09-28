@@ -124,12 +124,11 @@ export function ContactForm() {
                 <label htmlFor="budget" className="text-sm font-medium text-foreground/80">Estimated Budget *</label>
                 <select required id="budget" name="budget" defaultValue="" className="w-full bg-background/50 border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all appearance-none">
                   <option value="" disabled>Select budget range...</option>
-                  <option value="Under ₹50,000">Under ₹50,000</option>
-                  <option value="₹50,000 – ₹1 Lakh">₹50,000 – ₹1 Lakh</option>
-                  <option value="₹1 Lakh – ₹3 Lakhs">₹1 Lakh – ₹3 Lakhs</option>
-                  <option value="₹3 Lakhs – ₹5 Lakhs">₹3 Lakhs – ₹5 Lakhs</option>
-                  <option value="₹5 Lakhs – ₹10 Lakhs">₹5 Lakhs – ₹10 Lakhs</option>
-                  <option value="₹10 Lakhs+">₹10 Lakhs+</option>
+                  <option value="Under ₹25,000">Under ₹25,000</option>
+                  <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+                  <option value="₹50,000 – ₹1,00,000">₹50,000 – ₹1,00,000</option>
+                  <option value="₹1,00,000 – ₹3,00,000">₹1,00,000 – ₹3,00,000</option>
+                  <option value="₹3,00,000+">₹3,00,000+</option>
                   <option value="Not Sure Yet">Not Sure Yet</option>
                 </select>
               </div>
